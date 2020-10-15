@@ -338,6 +338,11 @@
 
     <div class="wrapper-modal">
 
+
+
+
+
+
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close><svg class="" width="11px" height="11px">
             <use href="./images/sprite.svg#close-btn-modal">
@@ -345,9 +350,49 @@
 
             </use>
           </svg></button>
+
+
+        <form class="form" action="#">
+
+          <p class="modal-head">Оставьте свои данные, мы вам перезвоним</p>
+
+          <label class="label-modal"><span class="label-modal-text">Имя</span>
+            <input class="contact-form__input" type="text" name="user-name" required>
+          </label>
+
+
+          <label class="label-modal"><span class="label-modal-text">Телефон</span>
+            <input class="contact-form__input" type="tel" name="user-tel">
+          </label>
+
+
+
+          <label class="label-modal"><span class="label-modal-text">Почта</span>
+            <input class="contact-form__input" type="email" name="user-email">
+          </label>
+
+
+          <label class="label-modal-area"><span class="label-modal-text-area">Комментарий</span>
+            <textarea name="user-message" class="contact-form__message" maxlength="260"
+              placeholder="Введите текст"></textarea>
+          </label>
+
+
+          <p class="policy">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+
+          <div class="btn-wrapper">
+            <button class="contact-form__submit" type="submit">Отправить</button>
+          </div>
+
+        </form>
+
       </div>
 
+
+
     </div>
+
+  </div>
   </div>
   <script src="./js/modal.js"></script>
 </body>
