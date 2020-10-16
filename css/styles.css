@@ -91,30 +91,75 @@ img {
 }
 /* ================== MODAL ======================*/
 
-
-
-.policy {
-  /* outline: 2px solid tomato; */
-  font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #757575;
-display: block;
-margin: 0px;
-margin-bottom: 30px;
-
-
+.input-policy:checked + .checkbox-icon {
+  background-image: url(../images/modal/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
 }
 
+.input-policy:focus ~ .checkbox-icon {
+  background-color: rgb(235, 176, 165);
+}
+
+.input-policy:focus ~ .policy-text {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.input-policy {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.policy-text a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.label-policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  /* outline: 2px solid tomato; */
+}
+
+.policy-text {
+  /* outline: 2px solid tomato; */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: inline-block;
+  margin: 0px;
+  /* margin-bottom: 30px; */
+}
 
 .label-modal-text-area {
   display: block;
-   
+
   margin-bottom: 4px;
-   
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -128,7 +173,7 @@ margin-bottom: 30px;
 .label-modal-text {
   margin-bottom: 4px;
   display: block;
-  
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -136,7 +181,7 @@ margin-bottom: 30px;
   line-height: 1.166;
   letter-spacing: 0.01em;
 
-  color: #757575; */
+  color: #757575;
 }
 
 .modal-head {
@@ -153,14 +198,10 @@ margin-bottom: 30px;
 }
 
 .label-modal {
-  
-
-  color: #757575; 
+  color: #757575;
   /* outline: 2px solid tomato; */
   display: block;
   margin-bottom: 10px;
-  
-
 }
 
 .form {
@@ -179,7 +220,7 @@ input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   height: 40px;
   border-radius: 4px;
-  padding: 0px;
+  padding: 12px 42px;
 }
 
 .btn-wrapper {
@@ -767,13 +808,11 @@ input {
 }
 
 .right-footer {
-
   margin-right: 93px;
 }
 
 .right-footer-form h2 {
-
-   margin: 0;
+  margin: 0;
   padding: 0;
   padding-top: 12px;
   margin-bottom: 20px;
@@ -785,12 +824,10 @@ input {
   text-transform: uppercase;
 
   color: var(--white);
-
 }
 
 .button-footer__submit {
-
-   width: 200px;
+  width: 200px;
   height: 50px;
 
   background: #2196f3;
@@ -813,32 +850,29 @@ input {
 }
 
 .footer-form__input {
-/* display: inline-block; */
-width: 358px;
-height: 50px;
-border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-background-color: transparent;
-border-radius: 4px;
-margin-right: 12px;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
-padding: 0px;
-padding-left: 16px;
-color: rgba(255, 255, 255, 0.6);
-
+  /* display: inline-block; */
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  border-radius: 4px;
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  padding: 0px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .label-footer {
-
   display: inline-block;
 }
 
 .form-footer {
-
-display: flex;
+  display: flex;
 }
 
 /* ====================== PORTFOLIO ======================= */
