@@ -332,7 +332,15 @@
 
           <input class="footer-form__input" type="email" name="user-email" placeholder="E-mail">
 
-          <button class="button-footer__submit" type="submit">Подписаться</button>
+          <button class="button-footer__submit" type="submit"> <span class="text-button-footer">Подписаться</span>
+
+            <svg class="svg-icon-footer" width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-send-footer"></use>
+            </svg>
+
+          </button>
+
+
 
         </form>
 
@@ -357,12 +365,16 @@
 
 
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close><svg class="" width="11px" height="11px">
+        <button type="button" class="close-btn" data-modal-close>
+
+          <svg class="svg-close" width="11px" height="11px">
             <use href="./images/sprite.svg#close-btn-modal">
 
 
             </use>
-          </svg></button>
+          </svg>
+
+        </button>
 
 
         <form class="form" action="#">
@@ -371,17 +383,29 @@
 
           <label class="label-modal"><span class="label-modal-text">Имя</span>
             <input class="contact-form__input" type="text" name="user-name" required>
+            <svg class="modal-form-svg-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#user-modal">
+              </use>
+            </svg>
           </label>
 
 
           <label class="label-modal"><span class="label-modal-text">Телефон</span>
             <input class="contact-form__input" type="tel" name="user-tel">
+            <svg class="modal-form-svg-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#phone-modal">
+              </use>
+            </svg>
           </label>
 
 
 
           <label class="label-modal"><span class="label-modal-text">Почта</span>
             <input class="contact-form__input" type="email" name="user-email">
+            <svg class="modal-form-svg-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#email-modal">
+              </use>
+            </svg>
           </label>
 
 
