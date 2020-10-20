@@ -149,6 +149,7 @@ img {
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
+  background-color: var(--blue);
 }
 /* .checkbox-icon {
   width: 16px;
